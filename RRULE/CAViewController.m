@@ -120,11 +120,7 @@
     // rfc2445String = @"FREQ=MONTHLY;COUNT=3;BYDAY=TU,WE,TH;BYSETPOS=3";
     
     // The 2nd to last weekday of the month:
-    // rfc2445String = @"FREQ=MONTHLY;BYDAY=MO,TU,WE,TH,FR;BYSETPOS=-2";
-    
-    
-    // The 2nd to last weekday of the month:
-    rfc2445String = @"FREQ=WEEKLY;INTERVAL=2;COUNT=4;BYDAY=TU,SU;WKST=MO";
+    rfc2445String = @"FREQ=MONTHLY;BYDAY=MO,TU,WE,TH,FR;BYSETPOS=-2";
     
     
     ////////////////////

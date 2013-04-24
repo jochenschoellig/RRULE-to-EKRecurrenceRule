@@ -80,7 +80,6 @@ static NSDateFormatter *dateFormatter = nil;
                 
                 // Parse the week number
                 weekNumber = [[dayString substringToIndex:dayString.length-2] intValue];
-                // TODO: Exeption handler
   
                 [daysOfTheWeek addObject:[EKRecurrenceDayOfWeek dayOfWeek:dayOfWeek weekNumber:weekNumber]];
             }
