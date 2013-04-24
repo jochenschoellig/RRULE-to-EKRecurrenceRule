@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1965122517253D3B00EECEAC /* EKRecurrenceRule+RRULE.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965122417253D3B00EECEAC /* EKRecurrenceRule+RRULE.m */; };
+		1965122717254BF200EECEAC /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1965122617254BF200EECEAC /* EventKit.framework */; };
 		19E771A4171FED9B006C8607 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E771A3171FED9B006C8607 /* UIKit.framework */; };
 		19E771A6171FED9B006C8607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E771A5171FED9B006C8607 /* Foundation.framework */; };
 		19E771A8171FED9B006C8607 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E771A7171FED9B006C8607 /* CoreGraphics.framework */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1965122317253D3B00EECEAC /* EKRecurrenceRule+RRULE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EKRecurrenceRule+RRULE.h"; sourceTree = "<group>"; };
+		1965122417253D3B00EECEAC /* EKRecurrenceRule+RRULE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EKRecurrenceRule+RRULE.m"; sourceTree = "<group>"; };
+		1965122617254BF200EECEAC /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		19E771A0171FED9B006C8607 /* RRULE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRULE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E771A3171FED9B006C8607 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		19E771A5171FED9B006C8607 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1965122717254BF200EECEAC /* EventKit.framework in Frameworks */,
 				19E771A4171FED9B006C8607 /* UIKit.framework in Frameworks */,
 				19E771A6171FED9B006C8607 /* Foundation.framework in Frameworks */,
 				19E771A8171FED9B006C8607 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,7 @@
 		19E771A2171FED9B006C8607 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1965122617254BF200EECEAC /* EventKit.framework */,
 				19E771A3171FED9B006C8607 /* UIKit.framework */,
 				19E771A5171FED9B006C8607 /* Foundation.framework */,
 				19E771A7171FED9B006C8607 /* CoreGraphics.framework */,
@@ -88,6 +95,8 @@
 				19E771BB171FED9B006C8607 /* MainStoryboard.storyboard */,
 				19E771BE171FED9B006C8607 /* CAViewController.h */,
 				19E771BF171FED9B006C8607 /* CAViewController.m */,
+				1965122317253D3B00EECEAC /* EKRecurrenceRule+RRULE.h */,
+				1965122417253D3B00EECEAC /* EKRecurrenceRule+RRULE.m */,
 				19E771AA171FED9B006C8607 /* Supporting Files */,
 			);
 			path = RRULE;
@@ -177,6 +186,7 @@
 				19E771B0171FED9B006C8607 /* main.m in Sources */,
 				19E771B4171FED9B006C8607 /* CAAppDelegate.m in Sources */,
 				19E771C0171FED9B006C8607 /* CAViewController.m in Sources */,
+				1965122517253D3B00EECEAC /* EKRecurrenceRule+RRULE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +309,7 @@
 				19E771C5171FED9B006C8607 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
