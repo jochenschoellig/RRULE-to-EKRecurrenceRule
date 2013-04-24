@@ -21,7 +21,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5U7-e5-LHd" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Lkx-vm-TIA"/>
-                            <constraint firstItem="5U7-e5-LHd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="user" id="bdB-Jb-lpf"/>
+                            <constraint firstItem="5U7-e5-LHd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="135" id="wKV-ZP-FHh"/>
                         </constraints>
                     </view>
                 </viewController>
