@@ -1,12 +1,12 @@
 # RRULE-to-EKRecurrenceRule
 
-RRULE-to-EKRecurrenceRule is the easiest way to transform a RRULE string representation ([RFC 2445](http://www.ietf.org/rfc/rfc2445.txt)) into an [EKRecurrenceRule](http://developer.apple.com/library/ios/#documentation/EventKit/Reference/EKRecurrenceRuleClassRef/Reference/Reference.html). 'EKRecurrenceRule+RRULE' is an Objective-C category which adds a new init-Method to the EKRecurrenceRule class. EKRecurrenceRule is available in iOS 4.0 and later and needs the EventKit framework.
+RRULE-to-EKRecurrenceRule is the easiest way to transform a RRULE string representation ([RFC 2445](http://www.ietf.org/rfc/rfc2445.txt)) into an [EKRecurrenceRule](http://developer.apple.com/library/ios/#documentation/EventKit/Reference/EKRecurrenceRuleClassRef/Reference/Reference.html). **'EKRecurrenceRule+RRULE'** is an Objective-C category which adds a new initializer to the EKRecurrenceRule class. EKRecurrenceRule is available in iOS 4.0 and later and needs the EventKit framework.
 
 ## Getting Started
 
 - Download RRULE-to-EKRecurrenceRule and play with the included Xcode project.
-- Copy 'EKRecurrenceRule+RRULE.h' and 'EKRecurrenceRule+RRULE.m' into your own Xcode project.
-- Add **#import "EKRecurrenceRule+RRULE.h"** to all files you would like to use RRULE-to-EKRecurrenceRule.   
+- Copy **'EKRecurrenceRule+RRULE.h'** and **'EKRecurrenceRule+RRULE.m'** into your own Xcode project.
+- Add `#import "EKRecurrenceRule+RRULE.h"` to all files you would like to use RRULE-to-EKRecurrenceRule.   
 
 ## Example
 
@@ -16,7 +16,7 @@ RRULE-to-EKRecurrenceRule is the easiest way to transform a RRULE string represe
 - (void)testMethod
 {
     // Test
-    NSString *rfc2445String = @"FREQ=MONTHLY;BYDAY=MO,TU,WE,TH,FR;BYSETPOS=-2"; // The 2nd to last weekday of the month:
+    NSString *rfc2445String = @"FREQ=MONTHLY;BYDAY=MO,TU,WE,TH,FR;BYSETPOS=-2"; // The 2nd to last weekday of the month
 
     // Result
     EKRecurrenceRule *recurrenceRule = [[EKRecurrenceRule alloc] initWithString:rfc2445String];
