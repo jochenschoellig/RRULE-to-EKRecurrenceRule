@@ -13,23 +13,12 @@ RRULE-to-EKRecurrenceRule is the easiest way to transform a RRULE string represe
 ``` objective-c
 #import "EKRecurrenceRule+RRULE.h"
 
-@implementation CAViewController
-
-- (void)viewDidLoad
+- (void)testMethod
 {
-    [super viewDidLoad];
-  
-    ////////////////////
     // Test
-    ////////////////////
-    
-    // The 2nd to last weekday of the month:
-    NSString *rfc2445String = @"FREQ=MONTHLY;BYDAY=MO,TU,WE,TH,FR;BYSETPOS=-2";
-    
-    ////////////////////
+    NSString *rfc2445String = @"FREQ=MONTHLY;BYDAY=MO,TU,WE,TH,FR;BYSETPOS=-2"; // The 2nd to last weekday of the month:
+
     // Result
-    ////////////////////
-    
     EKRecurrenceRule *recurrenceRule = [[EKRecurrenceRule alloc] initWithString:rfc2445String];
     NSLog(@"%@", recurrenceRule);
 }
