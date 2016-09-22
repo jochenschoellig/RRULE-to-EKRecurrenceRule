@@ -149,7 +149,8 @@ static NSDateFormatter *dateFormatter = nil;
         } else if ([component isEqualToString:@"UNTIL"])
         {
             NSDate *endDate =  [dateFormatter dateFromString:[components objectAtIndex:++i]];
-            recurrenceEnd = [EKRecurrenceEnd recurrenceEndWithEndDate:endDate];
+            if (endDate)
+                recurrenceEnd = [EKRecurrenceEnd recurrenceEndWithEndDate:endDate];
         }
     }
     
